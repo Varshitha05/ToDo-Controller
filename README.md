@@ -16,7 +16,7 @@ A simple task management application built with React.js that allows users to ad
 - react-icons
 
 ## Setup and Installation
-1. Clone the repository: `git clone https://github.com/yourusername/task-manager-app.git`
+1. Clone the repository: `https://github.com/Varshitha05/ToDo-Controller.git`
 2. Install dependencies: `npm install`
 3. Start the development server: `npm start`
 
