@@ -11,20 +11,22 @@ body {
 }
 
 .container {
-  max-width: 500px;
-  margin: 30px auto;
+  max-width: 600px;
+  width: 50%;
+  margin: auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid steelblue;
-  padding: 30px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; 
+  padding: 20px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
+  color:black;
 }
 
-.container:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-  transform: translateY(-5px); 
+.container .some-inner-element {
+  color: black; 
 }
 
 .header {
@@ -39,11 +41,11 @@ body {
 
 .centered-content {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .centered-text {
-  color: #4A90E2; 
+  color: navy; 
   font-family: Arial, sans-serif; 
 }
 

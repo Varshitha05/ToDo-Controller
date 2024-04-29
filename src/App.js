@@ -13,6 +13,16 @@ function App() {
     return localData ? JSON.parse(localData) : []
   })
 
+  const appStyle = {
+    backgroundImage: 'url("/background.svg")',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
+    minHeight: '100vh',
+    minWidth: '100vw'
+  };
+
   useEffect(() => {
     localStorage.setItem('tasks', JSON.stringify(tasks))
   }, [tasks])
@@ -74,24 +84,24 @@ const toggleReminder = (id) => {
 }
 
   return (
-    <div className="container">
-     <Header showAdd={showAddTask} onAdd={() => setShowAddTask(!showAddTask)} />
+    <div style={appStyle}>
+      <div className="container">
+      <Header showAdd={showAddTask} onAdd={() => setShowAddTask(!showAddTask)} />
 
-     {showAddTask && <AddTask onAdd={addTask} />}
+      {showAddTask && <AddTask onAdd={addTask} />}
 
 
-     {tasks.length >0 ? (
-      <Tasks tasks={tasks} onToggle={toggleReminder} onDelete={deleteTask} /> 
-     ): (
-      <div className="centered-content">
-        <h3 className="centered-text">Start organizing your work by adding the tasks</h3>
-        <p className="gap">No tasks to display</p>
+      {tasks.length >0 ? (
+        <Tasks tasks={tasks} onToggle={toggleReminder} onDelete={deleteTask} /> 
+      ): (
+        <div className="centered-content">
+          <h3 className="centered-text">Start organizing your work by adding the tasks</h3>
+          <p className="gap">No tasks to display</p>
+        </div>
+      )}
+  
       </div>
-     )}
-  
     </div>
-  
-
   );
 }
 
