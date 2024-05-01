@@ -31,8 +31,8 @@ To add a new task:
 4. Set a reminder if needed. A local notification will alert you when the task is due to start.
 5. Choose a priority level for your task: Low, Medium, or High.
 6. Click "Save Task" to add the task to your list.
-   
-![merged_image](https://github.com/Varshitha05/ToDo-Controller/assets/69505296/08c95d54-cbc0-4329-a592-4b9e387a2215)
+
+![merged_resized_image](https://github.com/Varshitha05/ToDo-Controller/assets/69505296/0faa8adc-3848-4cf1-ae7a-7c7925dab4b6)
 
 Once a task is completed, you can delete it by clicking the "cross" icon next to the task.
 
